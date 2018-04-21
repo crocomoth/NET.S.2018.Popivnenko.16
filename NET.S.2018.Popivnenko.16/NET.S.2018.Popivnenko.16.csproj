@@ -48,5 +48,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NET.S.2018.Popivnenko.16.XmlDocs\NET.S.2018.Popivnenko.16.XmlDocs.csproj">
+      <Project>{93f27a03-92d3-4460-b6f2-c88c02db8872}</Project>
+      <Name>NET.S.2018.Popivnenko.16.XmlDocs</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,7 +20,7 @@ namespace NET.S._2018.Popivnenko._16.XmlDocs.Repository
         /// </summary>
         public XmlUrlWriter()
         {
-            this._filePath = "/xmlurl.txt";
+            this._filePath = @".\xmlurl.txt";
         }
 
         /// <summary>
@@ -33,7 +33,8 @@ namespace NET.S._2018.Popivnenko._16.XmlDocs.Repository
             _filePath = filePath ?? throw new ArgumentNullException(nameof(filePath));
             if (!File.Exists(filePath))
             {
-                File.Create(filePath);
+                var temp = File.Create(filePath);
+                temp.Close();
             }
         }
 
