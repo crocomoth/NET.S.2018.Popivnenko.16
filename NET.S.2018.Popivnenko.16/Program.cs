@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace NET.S._2018.Popivnenko._16
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
-        {
+        public static void Main(string[] args)
+        {           
         }
     }
 }
